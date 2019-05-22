@@ -1,0 +1,43 @@
+#+TITLE: README
+#+AUTHOR: Eduardo Robles
+#+EMAIL: eduardo@eduardorobles.com
+#+OPTIONS: num:nil
+
+* Hi! I'm Eduardo and this is my #100DaysofLinux Challenge
+
+** Who am I?
+I'm [[https://eduardorobles.com][Eduardo Robles]] and I'm looking for a job in the Open Source world. I've been
+using Linux for 12+ years despite not having a computer science degree. I like
+to say that I will always be a beginner despite using Linux for 10+ years.
+
+I also started an instagram account called [[https://instagram.com/tacosandlinux][@tacosandlinux]] where I show off my
+passion for Linux and Open Source. I also started a Linux User Group in my area,
+check out [[https://stxlug.com][South Texas Linux User Group]] for info on that. So I'm just geek
+looking to promote my passion for Open Source with the world.
+
+** Why am I doing this?
+I realized that I had things to teach even if there small little things. So the
+#100DaysofLinux challenge seemed like the best way to tackle this problem.
+There's a fair amount of accountability and promotion when doing these types of
+challenges which is perfect for me.
+
+** Where can you follow along?
+I will be [[https://twitter.com/mrerwtc][tweeting]] about it as it is one of the main rules for the challenge.
+But I will also be blogging, and creating short videos along the way. And of course you can
+follow this repo too.
+
+** How can I joing in?
+Easy, simply read up on the rules at https://www.100daysofx.com. If you decided
+to do the #100DaysofLinux challenge, let me know on Twitter so we can cheer each
+other on!
+
+** What will I do for this challenge?
+To make things a bit easier I will cover material from the following topics:
+- Security
+- Encryption
+- Virtualization
+- Remote Support
+- Apps
+
+There may be more topics added as I go along but these 5 main topics should
+provide enough material.
