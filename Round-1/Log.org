@@ -1,5 +1,6 @@
 #+TITLE: Log
 #+AUTHOR: Eduardo Robles
+#+OPTIONS: num:nil
 
 * Day 1 of 100: 05/22/2019
 ** Adding SSH keys to Github and Gitlab
@@ -42,5 +43,5 @@ And that's it! You've successfully added you SSH key to Github. Now when I push
 a commit to Github I'm not bothered to enter my credentials.
 *** Links:
 - https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
--https://gitlab.com/help/ssh/README#generating-a-new-ssh-key-pair
+- https://gitlab.com/help/ssh/README#generating-a-new-ssh-key-pair
 *** Notes: Adding SSH keys is basically the same for Gitlab. You can follow along with the link I provided if you need more guidance.
