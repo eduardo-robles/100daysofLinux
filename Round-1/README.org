@@ -1,0 +1,14 @@
+#+TITLE: README
+#+AUTHOR: Eduardo Robles
+
+* Round 1 of 100DaysofLinux challenge
+
+** Directory Contents
+1. Log.org
+2. Images folder (img)
+
+* Log structure
+- Headline is marked by Day X of X: MM/DD/YYYY
+- Title of demonstration
+- Links
+- Notes

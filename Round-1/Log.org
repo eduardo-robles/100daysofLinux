@@ -1,0 +1,46 @@
+#+TITLE: Log
+#+AUTHOR: Eduardo Robles
+
+* Day 1 of 100: 05/22/2019
+** Adding SSH keys to Github and Gitlab
+I got tired of having to enter my Github or Gitlab credentials every single time
+I made a push to my remote repos. So I decided create some SSH keys and add them
+so I can authenticate that way instead.
+
+Turns out it's actually really easy to authenticate with SSH keys. Both Github
+and Gitlab have great documentation on how to do this. I will leave links in the
+"links" section. So let's see how Github does it.
+
+*** Adding SSH keys to Github
+1. Generate a new key
+   ~ssh-keygen -t rsa -b 4096 -C "francisco@panchovilla.com~ enter you email in
+   the email portion.
+2. You will be prompted to "Enter a file in which to save the key...". Simply
+   hit ~[ENTER]~ if you want the default else give the file a specific name. In
+   my case I gave it a specific name since I will be have a key for Gitlab as
+   well.
+3. Next you will be prompted for passphrase. Enter a good one and remember to
+   save in your password manager or somewhere safe.
+4. Now copy the contents of you ssh public key to your clipboard. There a bunch
+   of ways of doing this so chose the easiest for you. REMEMBER COPY THE PUBLIC
+   KEY!! I did it like this... ~cat ~/.ssh/id_rsa_githubkey.pub~
+5. Go to your Github Settings page and find the section on SSH keys. Click on
+   "New SSH Key" and paste the contents of your public SSH key into the text
+   box.
+6. Click on "Add SSH key" to confirm the changes.
+7. Test if the key works with ~ssh -T git@github.com~. If you are prompted with
+   the usual SSH Authentication message then you know you did things correctly.
+8. Confirm the SSH Authentication and you should be prompted with a message that
+   reads
+
+   #+begin_quote
+   Hi yourUsername! You've successfully authenticated, but GitHub does not
+   provide shell access.
+   #+end_quote
+
+And that's it! You've successfully added you SSH key to Github. Now when I push
+a commit to Github I'm not bothered to enter my credentials.
+*** Links:
+- https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+-https://gitlab.com/help/ssh/README#generating-a-new-ssh-key-pair
+*** Notes: Adding SSH keys is basically the same for Gitlab. You can follow along with the link I provided if you need more guidance.
