@@ -41,3 +41,10 @@ To make things a bit easier I will cover material from the following topics:
 
 There may be more topics added as I go along but these 5 main topics should
 provide enough material.
+
+** Help cheer me along!
+I would appreciate if you would help keep me accountable while I do this
+challenge. So you can follow along on Twitter or on this repo. Plus we can
+discuss my progress. Also you can buy me a cup of coffee
+
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/G2G6S2IC)
