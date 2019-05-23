@@ -45,3 +45,56 @@ a commit to Github I'm not bothered to enter my credentials.
 - https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 - https://gitlab.com/help/ssh/README#generating-a-new-ssh-key-pair
 *** Notes: Adding SSH keys is basically the same for Gitlab. You can follow along with the link I provided if you need more guidance.
+
+* Day 2 of 100: 05/23/2019
+** Manage a Gitlab and Github account on one computer
+So after adding my SSH keys to Gitlab and Github I needed a way to tell my local
+git configurations when and how to use them. This is not that complicated but it
+is a bit of work to setup and is not fully automated. You will have to configure
+your SSH config and setup some ~bash~ aliases. There are plenty of other ways to
+do this but this works for me.
+
+Once you have your SSH keys setup for Gitlab and Github it's time to edit your
+SSH config to use them accordingly.
+1. Edit your SSH config with your favorite editor.
+2. Below is an example of my config, edit yours to fit your setup.
+
+#+begin_src bash
+# Github Account
+Host github.com
+     HostName github.com
+     PreferredAuthentication publickey
+     IdentityFile ~/.ssh/githubPublickeyFile
+
+# Gitlab Account
+Host gitlab.com
+     HostName gitlab.com
+     PreferredAuthentication publickey
+     IdentityFile ~/.ssh/gitlabPublickeyFile
+#+end_src
+
+Now you have to manually tell git to configure your ~user.email~ per project. In
+order to do this you have to setup some ~bash~ aliases.
+
+1. Setup an aliases for Github and Gitlab
+
+#+begin_src bash
+alias gh='git config user.email diana@wonderwoman.com'
+alias gl='git config user.email bruce@imbatman.com'
+#+end_src
+
+In this example I setup ~alias gh~ as my alias for Github and ~alias gl~ for
+Gitlab. You can name your aliases whatever you chose, also remember to set the
+correct email for Github or Gitlab. Also if you want, you can set in your
+~.gitconfig~ a default ~user.email~ configuration just in case you forget to run
+these aliases in your project folders.
+
+*Pro tip:* If you need to change your ~user.email~ for a giving project simply
+ use ~git commit --amend --reset-author~
+
+ And that's it! You now have 2 SSH keys for Github and Gitlab and your system
+ can find the correct keys depending on the project.
+
+*** Links:
+- https://everythingsysadmin.com/2017/01/two-github-accounts.html
+*** Notes: If you are using a different shell then setup aliases that work in that shell.
