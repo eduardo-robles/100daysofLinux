@@ -98,3 +98,37 @@ these aliases in your project folders.
 *** Links:
 - https://everythingsysadmin.com/2017/01/two-github-accounts.html
 *** Notes: If you are using a different shell then setup aliases that work in that shell.
+
+* Day 3 of 100: 05/24/2019
+** Changing a Git project Remote URL
+So the past 2 days I've setup SSH keys to authenticate with Github and Gitlab.
+The only problem was I needed to update my local cloned repos to use SSH
+authentication instead of HTTPS. This is an easy task and can be done on a per
+repo basis.
+
+In order to change the remote url's you will have to go into the local directory
+of your project in the terminal. Check the remote url of the project with this
+command  ~git remote -v~. Here's the difference between HTTPS and SSH remote
+urls.
+
+*HTTPS*
+#+begin_src bash
+origin  https://github.com/USERNAME/REPOSITORY.git (fetch)
+origin  https://github.com/USERNAME/REPOSITORY.git (push)
+#+end_src
+
+*SSH*
+#+begin_src bash
+origin  git@github.com:USERNAME/REPOSITORY.git (fetch)
+origin  git@github.com:USERNAME/REPOSITORY.git (push)
+#+end_src
+
+Here's how to change a remote from HTTPS to SSH
+~git remote set-url origin git@github.com:USERNAME/REPOSITORY.git~
+
+And that's it! With this little trick you can easily switch between HTTPS and
+SSH for your remote URL's
+*** Links
+- https://help.github.com/en/articles/changing-a-remotes-url
+- https://confluence.atlassian.com/bitbucket/change-the-remote-url-to-your-repository-794212774.html
+*** Notes
