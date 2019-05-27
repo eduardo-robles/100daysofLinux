@@ -132,3 +132,64 @@ SSH for your remote URL's
 - https://help.github.com/en/articles/changing-a-remotes-url
 - https://confluence.atlassian.com/bitbucket/change-the-remote-url-to-your-repository-794212774.html
 *** Notes
+* Day 4 of 100: 5/27/2019
+** Sign Git commits with a GPG/PGP key
+Continuing with my work on understanding Git, I wanted to add a GPG key to my
+Gitlab account. I want sign my commits so they are verified by me. Doing so is
+not so hard and only takes a few minutes. As a bonus I'm going to use the PGP
+key created in my [[https://keybase.io/eduardorobles][Keybase]] account.
+
+Let's get started by making sure we have Keybase ang GPG installed. You should
+follow the instructions to install Keybase or GPG for your OS. Both apps are
+available in Linux, MacOS, and Windows. Once both are installed you can begin
+importing the PGP key to you system. I'm on Ubuntu 18.04 so these command are
+for most Linux systems.
+
+- Import the Public Key
+  ~keybase pgp export | gpg --import~
+
+- Export the Private Key
+  ~keybase pgp export -s | gpg --allow-secret-key-import --import~
+
+
+During the second command you will prompted to create a passphrase. This is done
+so your local GPG system can add extra security to your GPG keys. This
+passphrase is for your local keyring, be sure to save it in your password manager.
+
+Now you will need to print out the contents of your Public key so you can add it
+to Gitlab. If you are using Keybase simply check your public profile for your
+Public Key. Else you can use the following commands to get your Public key.
+
+- If you want to save it to a TXT file
+  ~gpg --armor --export user@emailforkey.com > userPublicKey.txt~
+
+- If you want to print it out on the terminal
+  ~cat | gpg --armor --export user@emailforkey.com~
+
+Next you will add the *Public* key to your Gitlab account. In Gitlab go to your
+user settings > GPG keys > Add a GPG key.
+
+Here you will be promted with a text box to enter your Public key. Simply copy
+and paste the contents of you Public key and your done! Well almost...you need
+to tell your local Git to use the GPG key to sign commits.
+
+- Add the key to your global user settings
+  ~gpg config --global user.signingkey KEYID~ <- KEYID is of your GPG key pair
+
+- Tell git to prompt for commit signing
+  ~gpg config --global commit.gpgsign true~
+  
+And that's it!
+
+*** Links
+- https://gitlab.com/help/user/project/repository/gpg_signed_commits/index.md
+- https://www.elliotblackburn.com/importing-pgp-keys-from-keybase-into-gpg/
+
+*** Notes: If you don't have a Keybase account, simply create a GPG key pair on your system.
+
+* Day 5 of 100:
+** Title
+*** Links
+-
+-
+*** Notes
