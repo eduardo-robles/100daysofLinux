@@ -187,9 +187,56 @@ And that's it!
 
 *** Notes: If you don't have a Keybase account, simply create a GPG key pair on your system.
 
-* Day 5 of 100:
-** Title
+* Day 5 of 100: 5/28/2019
+** Encrypting your data with LUKS
+Learning to encrypt your hard drive is very important in the security space. Not
+only is it a good idea to encrypt but it's very easy to do so. So I did some
+research and found a good way to get started with encrypting your hard drive
+with LUKS.
+
+1. Let's get started by installing LUKS on Ubuntu 18.04
+~sudo apt install cryptsetup~
+
+It's helpful to know what partitions are on your system. Simply use the command
+~lsblk~ to do so.
+
+2. Now is time to encrypt a partition
+~sudo cryptsetup --verbose --verify-passphrase luksFormat /dev/sdbX~
+ - /where X is the number of partition, unless there's only a single partition/
+ - You will also be promted to enter a passphrase, be sure to make it a strong
+   one and to save it in your password manager.
+
+3. Open the encrypted partition so you can work with it
+~sudo cryptsetup luksOpen /dev/sdbX sdbX~
+
+4. If this is a new hard drive you will need to create a filesystem on that
+   partition
+~sudo mkfs.ext4 /dev/mapper/sdbX~
+
+Now you are done with creating an encrypted partition. Let's see if we can save
+files to the partition.
+
+1. Create a new empty directory in the encrypted partition
+~sudo mkdir /mnt/secure~
+~sudo mount /dev/mapper/sdbX /mnt/secure~
+
+2. Create a text file in that new directory
+~sudo touch /mnt/secure/test.txt~
+
+3. (Optional) You can change the permissions in this encrypted partition so your
+   regular system user can access it without ~Sudo~ privildeges.
+~sudo chown -R `whoami`:users /mnt/secure~
+
+ - Test permissions by creating an empty file without ~sudo~ permissions ~touch
+   /mnt/secure/test2.txt~ if this worked, then you can create and move files
+   into the partition without the need for ~sudo~ privildeges.
+
+Let's unmount the partition and make sure LUKS closes the encrypted partititon.
+
+1. Unmount the partition ~sudo unmount /dev/mapper/sdbX~
+2. Close the encrypted partition ~sudo cryptsetup luksClose sdbX~
+
+And that's it!
 *** Links
--
--
+- https://www.stxlug.com/meetup-4-20-19/
 *** Notes
