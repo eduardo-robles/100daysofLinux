@@ -1,6 +1,20 @@
 #+TITLE: README
 #+AUTHOR: Eduardo Robles
+#+MACRO: kofi [[https://ko-fi.com/G2G6S2IC][https://ko-fi.com/img/githubbutton_sm.svg]]
 
+* Hi! I'm Eduardo and this is my #100DaysofLinux Challenge
+
+** Who am I?
+I'm [[https://eduardorobles.com][Eduardo Robles]] and I'm looking for a job in the Open Source world. I've been
+using Linux for 12+ years despite not having a computer science degree. I like
+to say that I will always be a beginner despite using Linux for 10+ years.
+
+I also started an instagram account called [[https://instagram.com/tacosandlinux][@tacosandlinux]] where I show off my
+passion for Linux and Open Source. I also started a Linux User Group in my area,
+check out [[https://stxlug.com][South Texas Linux User Group]] for info on that. So I'm just geek
+looking to promote my passion for Open Source with the world.
+
+{{{kofi}}}
 
 * Round 1 of 100DaysofLinux challenge
 
