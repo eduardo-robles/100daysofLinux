@@ -1,6 +1,5 @@
 #+TITLE: README
 #+AUTHOR: Eduardo Robles
-#+MACRO: kofi [[https://ko-fi.com/G2G6S2IC][https://ko-fi.com/img/githubbutton_sm.svg]]
 
 * Hi! I'm Eduardo and this is my #100DaysofLinux Challenge
 
@@ -14,7 +13,8 @@ passion for Linux and Open Source. I also started a Linux User Group in my area,
 check out [[https://stxlug.com][South Texas Linux User Group]] for info on that. So I'm just geek
 looking to promote my passion for Open Source with the world.
 
-{{{kofi}}}
+#+ATTR_HTML: :alt Buy me a Coffee on Ko-Fi
+[[https://ko-fi.com/G2G6S2IC][https://ko-fi.com/img/githubbutton_sm.svg]]
 
 * Round 1 of 100DaysofLinux challenge
 
