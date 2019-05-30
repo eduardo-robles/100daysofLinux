@@ -1,6 +1,7 @@
 #+TITLE: Log
 #+AUTHOR: Eduardo Robles
 #+OPTIONS: num:nil
+#+MACRO: kofi [[https://ko-fi.com/G2G6S2IC][https://ko-fi.com/img/githubbutton_sm.svg]]
 
 * Day 1 of 100: 05/22/2019
 ** Adding SSH keys to Github and Gitlab
@@ -240,3 +241,43 @@ And that's it!
 *** Links
 - https://www.stxlug.com/meetup-4-20-19/
 *** Notes
+
+* Day 6 of 100: 5/29/2019
+** Adding Github Badges in Org files
+Github uses Markdown as it's syntax styling for any regular documents. So when
+you are creating your README files or LICENSE files writing them in markdown
+allows Github to automatically format them. But for this challenge I'm using
+Emacs + Org-mode. Org is another great text based syntax and [[https://org-mode.com][Org-mode]] is simply
+too amazing to try to explain here.
+
+The problem is that Org is not Markdown so Github renders it slightly
+differently. The cool thing about Org-mode is it's exporting functions which
+export to Markdown. But I wanted to keep all of my notes and Log in Org syntax. So
+I ran into a small issue when I wanted to add a Github Badge to my org file.
+
+Github Badges are primarily written in markdown. I did some research and I
+couldn't find much info on how to add markdown badges in org files. You could do
+multiple things, like use the ~export~ function. Or you could use the ~src~
+block feauture and add the badge as an HTML snippet.
+
+I did a quick little test and found that I could simply redo the markdown format
+in org format and the badge works! But I was reminded by a reddit post that [[https://melpa.org][MELPA]] shows you
+badges in all three formats. So I felt a little silly for overthinking this
+problem. But luckily I was able to find a solution. Below is an example of a
+Badge in Markdown syntax and another example in Org syntax.
+
+- In Markdown syntax
+~[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/G2G6S2IC)~
+
+- In Org Syntax
+~[[https://ko-fi.com/G2G6S2IC][https://ko-fi.com/img/githubbutton_sm.svg]]~
+
+The formats look similar but are quite different. I also found out via the reddi
+that you can use /Macros/ in an Org file to basically add these badges as well.
+But I've had limited success with this. I'll have to do a bit more research to
+get this working. In the end I was able to figure it out another way. And now I
+can show badges in org files. And that's it!
+
+*** Links
+- https://melpa.org/#/org2blog
+*** Notes {{{kofi}}}
