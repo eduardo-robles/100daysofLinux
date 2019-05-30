@@ -336,7 +336,7 @@ install it (in Ubuntu 18.04) so you can give it a try.
 
 - Run Emacs again and you should be prompted with Doom
 
-[[https://raw.githubusercontent.com/eduardo-robles/100daysofLinux/master/Round-1/img/myEmacs.png][Doom Emacs]]
+[[https://raw.githubusercontent.com/eduardo-robles/100daysofLinux/master/Round-1/img/myEmacs.png]]
 
 So now you have a Doom Emacs installed and you can get started with managing
 remote git repos with Magit or start writing Org documents. Check out the Doom
