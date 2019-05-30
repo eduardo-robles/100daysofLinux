@@ -2,6 +2,11 @@
 #+AUTHOR: Eduardo Robles
 #+OPTIONS: num:nil
 
+* #100DaysofLinux Challenge
+If you want cheer me along follow me on [[https://twitter.com/mrerwtc][twitter]] or buy me a coffee ☕
+[[https://ko-fi.com/G2G6S2IC][https://ko-fi.com/img/githubbutton_sm.svg]]
+
+-----
 * Day 1 of 100: 05/22/2019
 ** Adding SSH keys to Github and Gitlab
 I got tired of having to enter my Github or Gitlab credentials every single time
@@ -261,7 +266,7 @@ block feauture and add the badge as an HTML snippet.
 
 I did a quick little test and found that I could simply redo the markdown format
 in org format and the badge works! But I was reminded by a reddit post that [[https://melpa.org][MELPA]] shows you
-badges in all three formats. So I felt a little silly for overthinking this
+badges in all [[https://github.com/eduardo-robles/100daysofLinux/blob/master/Round-1/img/orgBadges.png][three]] formats. So I felt a little silly for overthinking this
 problem. But luckily I was able to find a solution. Below is an example of a
 Badge in Markdown syntax and another example in Org syntax.
 
