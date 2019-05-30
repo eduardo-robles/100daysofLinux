@@ -1,7 +1,6 @@
 #+TITLE: Log
 #+AUTHOR: Eduardo Robles
 #+OPTIONS: num:nil
-#+MACRO: kofi [[https://ko-fi.com/G2G6S2IC][https://ko-fi.com/img/githubbutton_sm.svg]]
 
 * Day 1 of 100: 05/22/2019
 ** Adding SSH keys to Github and Gitlab
@@ -272,6 +271,9 @@ Badge in Markdown syntax and another example in Org syntax.
 - In Org Syntax
 ~[[https://ko-fi.com/G2G6S2IC][https://ko-fi.com/img/githubbutton_sm.svg]]~
 
+- Actual Badge
+[[https://ko-fi.com/G2G6S2IC][https://ko-fi.com/img/githubbutton_sm.svg]]
+
 The formats look similar but are quite different. I also found out via the reddi
 that you can use /Macros/ in an Org file to basically add these badges as well.
 But I've had limited success with this. I'll have to do a bit more research to
@@ -280,4 +282,5 @@ can show badges in org files. And that's it!
 
 *** Links
 - https://melpa.org/#/org2blog
-*** Notes {{{kofi}}}
+*** Notes
+- If you feel awesome 👍 you can keep me going and buy me a coffee ☕ Thanks!
