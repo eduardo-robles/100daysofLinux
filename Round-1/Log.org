@@ -289,3 +289,60 @@ can show badges in org files. And that's it!
 - https://melpa.org/#/org2blog
 *** Notes
 - If you feel awesome 👍 you can keep me going and buy me a coffee ☕ Thanks!
+* Day 7 of 100: 5/30/2019
+** My Emacs Setup
+I use Emacs as my all around text editor and it is extremely powerful. Before I
+began using Emacs I was jumping back and forth between Vim, Gedit, and Kwrite.
+All of those text editors are great but Emacs has features that just blew me
+away.
+
+One of those features is an amazing package called *Org-mode*. Org-mode is
+system for organizing and formating notes. But Org-mode is much more because
+it's functionality includes a Word Processor, Calendar, Agenda, and document
+exporter.
+
+You combine that with other Emacs packages like [[https://magit.vc][Magit]] or [[https://github.com/org2blog/org2blog][org2blog]] you got one
+awesome text editor. Basically I use Emacs for writing my notes, managing my
+Github/Gitlab remote repos, and blogging in Wordpress. Emacs is totally awesome
+but it has a very steep learning curve. To make the learning curve a bit easier
+I use an Emacs configuration called ~Doom~!
+
+[[https://github.com/hlissner/doom-emacs][Doom]] is great and most importantly it's /FAST!/ With Doom you have ~Evil-mode~
+which adds the Vim keybinding to Emacs. Doom basically makes using Emacs
+easier and includes a bunch of amazing goodies. So I'd like to show you how to
+install it (in Ubuntu 18.04) so you can give it a try.
+
+- Install Emacs 26+
+
+~sudo add-apt-repository ppa:kelleyk/emacs~
+
+~sudo apt update~
+
+~sudo apt install emacs26~
+
+- Run Emacs once before installing Doom
+
+~emacs~
+
+- Clone Doom Emacs Config
+
+~git clone https://github.com/hlissner/doom-emacs ~/.emacs.d~
+
+- Install Doom
+
+~cd .emacs.d/bin~
+
+~doom quickstart~
+
+- Run Emacs again and you should be prompted with Doom
+
+So now you have a Doom Emacs installed and you can get started with managing
+remote git repos with Magit or start writing Org documents. Check out the Doom
+Github page for info on what else Doom is capable of. And that's it!
+
+*** Links
+- https://github.com/hlissner/doom-emacs
+- https://magit.vc/
+- https://github.com/org2blog/org2blog
+*** Notes
+- If you feel awesome 👍 you can keep me going and buy me a coffee ☕ Thanks! [[https://ko-fi.com/G2G6S2IC][https://ko-fi.com/img/githubbutton_sm.svg]]
