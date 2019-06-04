@@ -348,3 +348,37 @@ Github page for info on what else Doom is capable of. And that's it!
 - https://github.com/org2blog/org2blog
 *** Notes
 - If you feel awesome 👍 you can keep me going and buy me a coffee ☕ Thanks! [[https://ko-fi.com/G2G6S2IC][https://ko-fi.com/img/githubbutton_sm.svg]]
+* Day 8 of 100: 6/4/2019
+** Convert OVA to QCOW2 format
+When working with virtual machine file formats you have several different
+options. OVA is a common one but not one that is easily supported with KVM. So
+how do get around this issue? Simple, convert it to QCOW2 format. Let's see just
+how easy it is in Ubuntu 18.04.
+
+- Install ~QEMU-Utils~
+
+~sudo apt-get install qemu-utils~
+
+- Now extract your OVA image
+
+~tar -xvf VMexampleimage.ova~
+
+This step will result in 2 extracted files. You will either have a ~VMDK~ or ~VDI~
+file along with an ~OVF~ file. You will either use the ~VDI~ or ~VMDK~ file to
+convert into a ~QCOW2~ file.
+
+- Convert a ~VDI~ to ~QCOW2~
+
+~qemu-img convert -O qcow2 input.vdi output.qcow2~
+
+- Convert a ~VMDK~ to ~QCOW2~
+
+~qemu-img convert -O qcow2 input.vmdk output.qcow2~
+
+Now you have a ~QCOW2~ that can be easily used in KVM. Plus QCOW2 is also a
+widely supported format so many popular hypervisors support it. And that's it!
+
+*** Links
+- http://ask.xmodulo.com/convert-ova-to-qcow2-linux.html
+
+*** Notes
