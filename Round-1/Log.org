@@ -382,3 +382,18 @@ widely supported format so many popular hypervisors support it. And that's it!
 - http://ask.xmodulo.com/convert-ova-to-qcow2-linux.html
 
 *** Notes
+* Day 9 of 100: 6/7/2019
+** Git Superpowers
+I've been trying to sharpen my Git skills because Git is an amazing technology.
+But it can be tricky to learn and practice using Git is definetly needed. So I
+started to research tutorials and I found a few good resources.
+
+Here's a site called [[https://ohshitgit.com/][Oh shit, git!]]. Yes, that's the name of the site and it's
+full of amazing examples. Most importantly it shows some of the common ways you
+can mess up using Git. Then it shows you in /plain "English"/ how to fix the
+error. I recommend this site for the laugh factor alone and that it can save
+your life one day (at least your work day 🙏).
+
+*** Links
+- https://ohshitgit.com
+*** Notes
