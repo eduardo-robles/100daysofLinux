@@ -397,3 +397,26 @@ your life one day (at least your work day 🙏).
 *** Links
 - https://ohshitgit.com
 *** Notes
+* Day 10 of 100: 6/10/2019
+** Emacs Troubleshooting
+I've been trying to learn the ins and outs of Emacs lately. I use Doom Emacs as
+my text editor for most things. But one of the things I like use it for is
+posting to my Wordpress blogs. To accomplish this I setup a package called
+~org2blog~. This package allows me to post directly to Wordpress blog from Emacs
+using ~Org~ files as my posts.
+
+So I can keep local copies of my blog posts in ~Org~ files and post directly to
+my various blogs from Emacs. It's a win, win for me. But there are some
+drawbacks, I think with the version I'm running it has some issues with the
+~auth-sources~ api. It can read the ~authinfo.gpg~ file but I have to run
+~auth-source-forget-all-cached~ and then ~doom-reload~ before I can successfully
+log into my blogs.
+
+I'm still troubleshooting the problem to see if I can figure out the isssue, but
+it seems others have expressed frustration with ~auth-sources~. Maybe I'll try
+to use [[https://passwordstore.org][Pass]] as an alternative. Anyways that's it for now!
+
+*** Links
+- https://passwordstore.org
+- https://github.com/hlissner/doom-emacs
+*** Notes
