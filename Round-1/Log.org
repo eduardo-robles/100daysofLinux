@@ -420,3 +420,18 @@ to use [[https://passwordstore.org][Pass]] as an alternative. Anyways that's it 
 - https://passwordstore.org
 - https://github.com/hlissner/doom-emacs
 *** Notes
+* Day 11 of 100: 6/11/2019
+** Installing Nextcloud
+I installed Nextcloud on a VPS with cPanel installed. This is not the usual way
+of installting Nextcloud but it sure does make it easier. cPanel allows you to
+work with MySQL databases and files on your server easily. As long as you have
+some working knowledge of sever managment you can learn cPanel.
+
+So I wrote up a blog post about my process of installing Nextcloud. You can view
+the post [[https://erwtc.com/install-nextcloud-with-cpanel/][here.]] It's not full tutorial because every VPS environment is
+different, so your milelage may vary. But you can most of the way if not fully
+there with my tutorial. And that's it!
+
+*** Links:
+- https://erwtc.com/install-nextcloud-with-cpanel/
+*** Notes
