@@ -435,3 +435,23 @@ there with my tutorial. And that's it!
 *** Links:
 - https://erwtc.com/install-nextcloud-with-cpanel/
 *** Notes
+* Day 12 of 100: 6/17/2019
+** Command Line Basics
+I did a presentation for the South Texas Linux User Group on Command Line
+Basics. I covered 7 basic commands that I feel every new user should know. So
+below are the 7 commands every new Linux user should master.
+
+1. ~pwd~: Print Working Directory
+2. ~cd~: Change Directory
+3. ~mv~: Move (Files or Directories)
+4. ~ls~: List (Files or Directories)
+5. ~cp~: Copy
+6. ~rm~: Remove
+7. ~df~: Disk Filesystem
+
+I recommend you check out the manual pages for each of these commands if you are
+new to Linux. But overall these are 7 good commands to start with. And that's
+it!
+
+*** Links
+*** Notes
