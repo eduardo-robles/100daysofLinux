@@ -434,7 +434,7 @@ there with my tutorial. And that's it!
 
 *** Links:
 - https://erwtc.com/install-nextcloud-with-cpanel/
-*** Notes
+**** Notes
 * Day 12 of 100: 6/17/2019
 ** Command Line Basics
 I did a presentation for the South Texas Linux User Group on Command Line
@@ -454,4 +454,28 @@ new to Linux. But overall these are 7 good commands to start with. And that's
 it!
 
 *** Links
+*** Notes
+
+* Day 13 of 100: 6/20/2019
+** Working with Org-Mode in TXT files
+So I came across an interesting problem that had a very easy solution. Thanks to
+Org-mode being so robust the answer was so easy it only required one line of
+text. My issue was this, inside of Nextcloud online editor for "Notes", it only is
+able to parse ~.md~ or ~.txt~ files. I work with ~.org~ files with my Org/Emacs
+setup. So Nextloud could not open the ~.org~ files, it just prompted an error.
+
+I needed to find solution so I open and Org file in Nextcloud or at least have
+Nextcloud recognize it was a simple TXT file. The answer was to simply add the
+following line to the top of my file.
+
+~-*- mode: org; -*-~
+
+This one line at the top of my file allows Org/Emacs to read the file as an
+Org-mode file. Now I simply work in a file as I normally would and export out to
+~.txt~ with ~org-export~. Nextloud can read the ~.txt~ file though
+it doesn't properly format the file in Org but that's ok. And that's it!
+
+*** Links
+- https://orgmode.org/org.html#Activation
+
 *** Notes
