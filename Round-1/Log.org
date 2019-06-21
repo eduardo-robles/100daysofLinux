@@ -506,9 +506,20 @@ As you can see this can be a super useful function. I'm using it to create a new
 log entry for this challenge. So I don't have to retype the template I simply
 use /snippets/ to add a new entry. And that's it!
 
-[[https://raw.githubusercontent.com/eduardo-robles/100daysofLinux/master/Round-1/img/snippet.gif]]
+https://raw.githubusercontent.com/eduardo-robles/100daysofLinux/master/Round-1/img/snippet.gif
 
 *** Links
 - https://www.emacswiki.org/emacs/Yasnippet
 *** Notes
 
+* Day 15 of 100: 6/21/2019
+** Adding Org Capture Templates in Emacs
+So Org Capture is another amazing feature in Org-mode. Basically Org Capture
+let's you quickly /capture/ bits of information in various locations. Say you
+needed to add a note to your daily work journal well Org Capture can do that for
+you easily. Let's see how add a capture template in Emacs.
+
+First you'll have to setup some configurations in your ~init.el~ (or ~config.el~
+in my case).
+*** Links
+*** Notes
