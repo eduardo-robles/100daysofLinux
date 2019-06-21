@@ -479,3 +479,36 @@ it doesn't properly format the file in Org but that's ok. And that's it!
 - https://orgmode.org/org.html#Activation
 
 *** Notes
+* Day 14 of 100: 6/21/2019
+** Create Snippets in Emacs
+Emacs /Snippets/ are awesome and they can save you hours of time. To get
+snippets working in Emacs you have to have the package ~Yasnippet~. After you
+set that up you can start creating snippets. 
+
+But what is a snippet exactly? And why is it useful? Have you ever used /text
+expanding/ function in a document editor? If yes, then ~yasnippet~ works
+basically the same way. If not, /text expanding/ is basically a method of adding
+a block of specific text via a hotkey or key combination. So say you type a specific sentence a lot
+and don't want to retype it. You can setup a ~yasnippet~ and with a keyboard
+command you can simply let emacs type it for your.
+
+So here's how you can add a snippet in Emacs.
+
+1. Call ~yasnippet~ in Emacs.
+2. Use ~yas-new-snippet~
+3. Enter a ~Name~ and ~Key~. "Name" is what the snippet will be called, "Key" is
+   what it will appear as in the buffer.
+4. Add the content that you want copied in the text area.
+5. Save snippet
+6. Use ~SPC i s~ (in Doom Emacs) and insert the snippet
+
+As you can see this can be a super useful function. I'm using it to create a new
+log entry for this challenge. So I don't have to retype the template I simply
+use /snippets/ to add a new entry. And that's it!
+
+https://raw.githubusercontent.com/eduardo-robles/100daysofLinux/master/Round-1/img/snippet.gif
+
+*** Links
+- https://www.emacswiki.org/emacs/Yasnippet
+*** Notes
+
