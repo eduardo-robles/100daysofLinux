@@ -551,3 +551,35 @@ Once you setup all of these configurations you can simply call Org Capture with
 - https://orgmode.org/manual/Capture-templates.html#Capture-templates
 - https://emacsnyc.org/assets/documents/how-i-use-org-capture-and-stuff.pdf
 *** Notes
+* Day 16 of 100: 6/24/2019
+** Simple Steps to Stop Spam Emails
+I came across some spam issues that a client was having. Basically they simply
+were getting various forms of spam emails. Some included phishing and malware
+emails that were automatically detected by their email provider.
+
+But there is still a few more strategies we can implement to help deter spam for
+not just my client but for everyone. So let's see 2 of these strategies.
+
+- Reporting /suspicious/ URL's to Google
+You can go to the following address and submit a suspicious URL to Google.
+They'll analyze it, and if it meets the requirements for a phishing site it will
+block it in Chrome.
+
+https://safebrowsing.google.com/safebrowsing/report_phish/?hl=en
+
+- Report Domains to Domain Registrars
+Sometimes a domain gets taken over or a spammer buys them in bulk to setup spamming
+operations. Alerting Domain Name registrars that a domain is being used for
+spamming will get the domain taken down, garanteeing that the domain account is
+suspended.
+
+ Run ~whois~ on the Domain, here you will find a bunch of information on
+ regarding the domain. But you'll want to look for the registrar info and if
+ they have a link or email to which you can send them an "abuse" report. This is
+ an easy process and takes no time.
+
+ These two simple steps can help in curbing email spamming. Plus it may help
+ save the day of another internet citizen. And that's it!
+
+*** Links
+*** Notes
