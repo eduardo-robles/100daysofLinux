@@ -529,7 +529,7 @@ in my case). Below are some basic configurations but yours may differ.
         org-capture-notes-file "~/Org/notes.org"
         org-capture-templates
         '(("t" "Todo" entry (file+headline "todo.org" "Tasks")
-              "* TODO %?\n  %i\n")
+              "*TODO %?\n  %i\n")
           ("n" "Note" entry (file+headline "notes.org" "Notes")(file "~/emacs.d/templates/notes.orgcaptmpl"))
           ))
 #+END_SRC
