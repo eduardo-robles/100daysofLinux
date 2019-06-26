@@ -1,6 +1,6 @@
 #+TITLE: Log
 #+AUTHOR: Eduardo Robles
-#+OPTIONS: num:nil
+#+OPTIONS:
 
 * #100DaysofLinux Challenge
 If you want cheer me along follow me on [[https://twitter.com/mrerwtc][twitter]] or buy me a coffee ☕
@@ -582,4 +582,32 @@ suspended.
  save the day of another internet citizen. And that's it!
 
 *** Links
+*** Notes
+* Day 17 of 100: 6/25/2019
+** Create a Windows 10 Boot USB Drive
+As it turns out I actually needed to create a Windows 10 USB Boot drive today!
+Funny thing is that I didn't have a spare Windows 10 computer do download the
+official /Windows Media Creation Tool/. Luckily there's always a way to get
+around Windows stuff with Linux!
+
+I found out that if you simply mount the Windows 10 ~iso~ file it has all the
+files you need to create a USB Boot drive. So let's see just how easy it is to
+create a Windows 10 Boot drive in Ubuntu 18.04.
+
+1. Downloads a legal copy of Windows 10 [[https://www.microsoft.com/en-in/software-download/windows10ISO][here.]]
+2. Go to where you downloaded the Windows 10 ISO file.
+3. Right click on the ~iso~ file and chose to mount it in ~Disk Image Mounter~
+4. Once the ~iso~ is mounted simply go to the directory containing all the
+   Windows 10 files.
+5. Copy over all the files from the mounted Windows 10 ~iso~ to a blank USB
+   drive. =Be sure the USB drive is at least 16GB and is either GPT or MBR=
+6. Once you have everything copied over to the blank USB you should have a
+   bootable Windows 10 USB.
+7. Test if the USB drive boots into Windows 10.
+
+It's that easy to create a Windows 10 USB drive in Linux. And that's it!
+
+*** Links
+- https://www.microsoft.com/en-in/software-download/windows10ISO
+- https://itsfoss.com/bootable-windows-usb-linux/
 *** Notes
