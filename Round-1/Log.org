@@ -611,3 +611,55 @@ It's that easy to create a Windows 10 USB drive in Linux. And that's it!
 - https://www.microsoft.com/en-in/software-download/windows10ISO
 - https://itsfoss.com/bootable-windows-usb-linux/
 *** Notes
+* Day 18 of 100: 7/07/2019
+** Mobile Emacs Environment
+Recently I was intereseted in setting up Emacs on an Android device. I had heard
+of an app called [[https://termux.com][Termux]] that simulates a Linux environment on Android. This
+means you can have many Linux applications on your Android device.
+
+And of course they have an Emacs package for Termux! So I went ahead and
+installed Termux on an Android tablet I had. I used F-Droid app store to install
+Termux but you can use the Google Play store as well.
+
+Once Termux was installed I had to install Emacs. To install applications in
+Termux you have to use the package manager that is included in their Linux
+environment. It's very easy to use and if you are familiar with Debian/Ubuntu
+style of package managers then this will easy for you.
+
+To install Emacs run the following command:
+
+~pkg install emacs~
+
+Once the installation is complete simply run ~emacs~ in the terminal. Emacs will
+launch and you're now running Emacs on your Android device! And that's it!
+*** Links
+*** Notes
+
+* Day 19 of 100: 7/08/2019
+** DOOM Emacs on Mobile
+In my last post I demonstrated just how easy it is to setup a "Mobile Emacs
+Environment". Now I'm going to show you how you can get an Emacs configuration
+like [[https://github.com/hlissner/doom-emacs][DOOM]] to work in Termux.
+
+First be sure to install ~Emacs~ in Termux.
+
+~pkg install emacs~
+
+Then proceed to install DOOM by cloning the develop Github branch.
+
+~git clone -b develop https://github.com/hlissner/doom-emacs ~/.emacs.d~
+
+Once cloned you will need to install DOOM with Doom Quickstart
+
+~~/.emacs.d/bin/doom quickstart~
+
+Once the installation is complete run ~emacs~ in your terminal and DOOM should
+start.
+
+[[https://raw.githubusercontent.com/eduardo-robles/100daysofLinux/master/Round-1/img/hpTouchpadEmacs.jpg]]
+
+And that's!
+*** Links
+*** Notes
+I had to troubleshoot my installtion by editing the ~init.el~ file. I had to
+change the memory at startup variable. But this may be a bug, just and FYI.
