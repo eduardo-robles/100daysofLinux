@@ -663,3 +663,61 @@ And that's!
 *** Notes
 I had to troubleshoot my installtion by editing the ~init.el~ file. I had to
 change the memory at startup variable. But this may be a bug, just and FYI.
+
+* Day 20 of 100: 7/15/2019
+** Reset Windows Password with Linux
+Ever needed to reset your Windows password but forgot to make a /Windows Reset
+Password/ disk? If so, you can easily reset a Windows Users password with a Live
+Linux USB. Let's see just how easy it is to so.
+
+0. If you don't a Live Linux USB go ahead an create one. This tutorial is Ubuntu
+   based so any Ubuntu flavor will work. And you will need a working internet
+   connection to download software.
+
+1. Start the computer and boot into the Live Linux environment.
+
+2. Once in the Live Linux environment make sure you connect to the internet and
+   open a terminal.
+
+3. You will need to install tool called ~chntpw~. So ahead and run the following
+   command to install ~chntpw~
+
+   ~apt-get install chntpw~
+
+4. Once installed you will have to mount the hard drive that has Windows
+   installed. There are many ways of doing this but you can use the File Manager
+   (Nautilus in Ubuntu) to make things easy.
+
+5. Once you have the Windows Harddrive mounted go to the following directory
+   ~/windowsHarddrive/Windows/System32/config/~
+
+6. Now that you are at the correct directory, ~right click~ and chose ~Open With
+   Terminal Here~.
+
+7. In the terminal simply type the following command to interact with ~chntpw~
+
+   ~sudo chntpw SAM~
+   
+8. Now you are editing the ~Administrator~ user if you would like to edit
+   another user use this command.
+
+   ~sudo chntpw -u USERYOUWANTTOEDIT SAM~
+
+9. After you've chosen your user it's time to reset their password. Simply type
+   ~1~ in ther /User Edit Menu/. And then chose ~y~ when prompted to ~Write hive
+   files~
+
+10. Then to quit type ~q~ and this will exit ~chntpw~
+
+11. Close the terminal and restart your computer making sure to remove the Live
+    Linux USB.
+
+12. You should boot into Windows desktop directly without any login. Be sure to
+    add a new password!
+
+Congratulations you have successfully reset your Windows with Linux! And that's it!
+
+
+*** Links
+- https://www.howtogeek.com/howto/14369/change-or-reset-windows-password-from-a-ubuntu-live-cd/
+*** Notes
