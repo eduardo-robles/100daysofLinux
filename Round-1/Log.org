@@ -721,3 +721,35 @@ Congratulations you have successfully reset your Windows with Linux! And that's 
 *** Links
 - https://www.howtogeek.com/howto/14369/change-or-reset-windows-password-from-a-ubuntu-live-cd/
 *** Notes
+* Day 21 of 100: 7/17/2019
+** Mounting LVM filesystems
+Recently I was trying to get some files from a hard drive that I pulled out of a
+computer. The hard drive had CentOS installed and it setup under LVM for it's
+partitions. When I tried mounting the LVM partitions under Fedora 30 they didn't
+show up.
+
+So I did a bit of research and discovered it really easy to mount LVM partions
+in Fedora. Let's see just how it's done.
+
+1. Run ~vgscan~ to find all the /volume groups/ in all attached disks. It will
+   output something like this
+
+   ~Found volume group "centos" using metadata type lvm2~
+
+2. You can see the LVM partitions by running ~ls -l
+   /dev/centos~. Here we use ~/dev/centos~ because that's the metadata that the
+   system was able to pull from the LVM partitions on the hard drive. You'll
+   usually see ~/dev/centos/root~, ~/dev/centos/home~, etc.
+
+3. You can mount the desired LVM partition with ~mount /dev/centos/home
+   /mnt/centos~.
+
+4. Finally you can unmount the LVM partition with ~umount /dev/centos/home~
+
+
+That's how you work with an LVM partitions in Fedora. It's pretty easy and great
+to know especially when you want to pull files from a hard drive. And that's it!
+
+
+*** Links
+*** Notes
